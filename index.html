@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prueba técnica S&E</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <section class="main__container">
+      <h1>Tipo de Contrato</h1>
+      <form class="form">
+        <input class="form__input" type="text" />
+        <button class="form__btn">
+          <i class="fas fa-arrow-down"></i>
+        </button>
+      </form>
+      <table>
+        <thead>
+          <tr>
+            <!-- <th>tipo <i class="fas fa-sort-down"></i></th> -->
+            <th>
+
+                <select class="select">
+                  <option value="">Tipo</option>
+                  <option value="primario">Primarios</option>
+                  <option value="secundario">Secundarios</option>
+                  <option value="otro">Otros</option>
+                </select>
+                <i class="fas fa-sort-down"></i>
+              </div>
+            </th>
+            <th><i class="fas fa-heart"></i></th>
+          </tr>
+        </thead>
+        <tbody class="table"></tbody>
+      </table>
+      <section class="btn__container">
+        <button class="btn btn__delete">
+          <i class="far fa-trash-alt"></i>
+        </button>
+        <button class="btn btn__save">
+          <i class="far fa-save"></i>
+        </button>
+        <button class="btn btn__action">
+          <i class="fas fa-bullseye"></i>
+        </button>
+      </section>
+    </section>
+
+    <script
+      src="https://kit.fontawesome.com/69ee89bd83.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/models/data.model.js"></script>
+    <script src="./js/services/data.service.js"></script>
+    <script src="./js/controllers/data.controller.js"></script>
+    <script src="./js/views/data.view.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
